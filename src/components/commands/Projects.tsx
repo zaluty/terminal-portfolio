@@ -12,6 +12,7 @@ import {
 } from "../styles/Projects.styled";
 import { termContext } from "../Terminal";
 import Usage from "../Usage";
+import { HighlightSpan } from "../styles/About.styled";
 
 const Projects: React.FC = () => {
   const { arg, history, rerender } = useContext(termContext);
@@ -56,28 +57,23 @@ const Projects: React.FC = () => {
 const projects = [
   {
     id: 1,
-    title: "Sat Naing's Blog",
+    title: "SFFR's Blog",
     desc: "My personal blog where I can write down my thoughts and experiences.",
     url: "https://satnaing.dev/blog/",
   },
   {
     id: 2,
-    title: "Haru Fashion",
-    desc: "An ecommerce web application where users can browse various products and make purchases.",
-    url: "https://haru-fashion.vercel.app/",
+    title: "Mugnum",
+    desc: "An AI ready to help Youtube content creator scale this isn't publicly available." ,
+    url: "",
   },
   {
     id: 3,
-    title: "Haru API",
-    desc: "A RESTful API developed for the Haru fashion ecommerce project.",
-    url: "https://satnaing.github.io/haru-api/",
+    title: "my previous portfolio",
+    desc: "My previous portfolio v.0.0.1",
+    url: "https://zaluty.github.io/hamza/",
   },
-  {
-    id: 4,
-    title: "AstroPaper Blog Theme",
-    desc: "A minimal, accessible and SEO-friendly Astro blog theme.",
-    url: "https://astro-paper.pages.dev/",
-  },
+   
 ];
 
 export default Projects;
